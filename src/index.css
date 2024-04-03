@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "century-gothic-regular";
+  src: url(../src/assets/fonts/century-gothic/Century-Gothic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic-black";
+  src: url(../src/assets/fonts/century-gothic/GOTHICB.TTF) format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic-bold";
+  src: url(../src/assets/fonts/century-gothic/GOTHICB0.TTF) format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic-bold-italic";
+  src: url(../src/assets/fonts/century-gothic/GOTHICBI.TTF) format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic-italic";
+  src: url(../src/assets/fonts/century-gothic/GOTHICI.TTF) format("truetype");
+}
+
+@font-face {
+  font-family: "johnstown-demo";
+  src: url(../src/assets/fonts/johnstown-demo/JohnstownDemoRegular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "josefinsans-bold";
+  src: url(../src/assets/fonts/Josefin_Sans/JosefinSans-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "josefinsans-bold-italic";
+  src: url(../src/assets/fonts/Josefin_Sans/JosefinSans-BoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "josefinsans-italic";
+  src: url(../src/assets/fonts/Josefin_Sans/JosefinSans-Italic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "josefinsans-medium";
+  src: url(../src/assets/fonts/Josefin_Sans/JosefinSans-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "josefinsans-medium-italic";
+  src: url(../src/assets/fonts/Josefin_Sans/JosefinSans-MediumItalic.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "josefinsans-regular";
+  src: url(../src/assets/fonts/Josefin_Sans/JosefinSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "rem-black";
+  src: url(../src/assets/fonts/REM/REM-Black.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "rem-bold";
+  src: url(../src/assets/fonts/REM/REM-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "rem-bold-italic";
+  src: url(../src/assets/fonts/REM/REM-BoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "rem-italic";
+  src: url(../src/assets/fonts/REM/REM-Italic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "rem-medium";
+  src: url(../src/assets/fonts/REM/REM-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "rem-medium-italic";
+  src: url(../src/assets/fonts/REM/REM-MediumItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "rem-regular";
+  src: url(../src/assets/fonts/REM/REM-Regular.ttf) format("truetype");
+}
