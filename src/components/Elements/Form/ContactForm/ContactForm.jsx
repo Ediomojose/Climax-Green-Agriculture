@@ -15,19 +15,19 @@ const validate = (values) => {
   }
 
   if (!values.lastName) {
-    errors.lastName = "ReInput field cannot be emptyquired";
+    errors.lastName = "Input field cannot be empty";
   } else if (values.lastName.length > 20) {
     errors.lastName = "Must be 20 characters or less";
   }
 
   if (!values.email) {
-    errors.email = "ReqInput field cannot be emptyuired";
+    errors.email = "Input field cannot be empty";
   } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
     errors.email = "Invalid email address";
   }
 
   if (!values.message) {
-    errors.message = "RequInput field cannot be emptyired";
+    errors.message = "Input field cannot be empty";
   } else if (values.lastName.length > 50) {
     errors.message = "Must be 50 characters or more";
   }
@@ -53,9 +53,10 @@ const ContactForm = () => {
   });
 
   return (
+    <>
     <form
       onSubmit={formik.handleSubmit}
-      className={`flex flex-col pt-28 px-5 md:px-16 font-josefinsansRegular`}
+      className={`flex flex-col justify-center py-20 px-5 md:px-16 font-josefinsansRegular`}
     >
       <div className={`grid md:grid-cols-2 gap-14`}>
         <div className={` flex flex-col gap-3`}>
@@ -108,7 +109,7 @@ const ContactForm = () => {
             id="message"
             cols="30"
             rows="10"
-            className={`py-3 px-5 w-full text-base font-josefinsansRegular rounded border-2  outline-none`}
+            className={`py-3 px-5 w-full text-base font-josefinsansRegular rounded border-2  outline-none resize-none`}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.message}
@@ -121,8 +122,9 @@ const ContactForm = () => {
         </div>
       </div>
 
-      <button type="submit">Submit</button>
+      <button type="submit" className={`bg-brandGreen3x py-3 my-5 mx-auto rounded-md font-josefinsansBold text-brandWhite1x w-1/4`}>Submit</button>
     </form>
+    </>
   );
 };
 

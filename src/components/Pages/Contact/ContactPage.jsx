@@ -1,11 +1,11 @@
 import React from "react";
 import TemplateWrapper from "../../../widget/TemplateWrapper";
-import ContactForm from "../../Elements/Form/ContactForm/ContactForm";
+import FormWrapper from "./FormWrapper";
 
 const ContactPage = () => {
   return (
     <TemplateWrapper>
-      <ContactForm/>
+      <FormWrapper/>
     </TemplateWrapper>
   );
 };
