@@ -1,12 +1,13 @@
-import React from 'react'
-import TemplateWrapper from '../../../widget/TemplateWrapper'
+import React from "react";
+import TemplateWrapper from "../../../widget/TemplateWrapper";
+import ContactForm from "../../Elements/Form/ContactForm/ContactForm";
 
 const ContactPage = () => {
   return (
     <TemplateWrapper>
-        Contact Page
+      <ContactForm/>
     </TemplateWrapper>
-  )
-}
+  );
+};
 
-export default ContactPage
+export default ContactPage;

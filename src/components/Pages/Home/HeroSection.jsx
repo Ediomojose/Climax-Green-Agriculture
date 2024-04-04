@@ -4,7 +4,7 @@ import Farmer from "../../../assets/media/images/countryside-man-disinfecting-fi
 import FarmerOnBike from "../../../assets/media/images/countryside-people-working-field.jpg";
 import Cassava from "../../../assets/media/images/3.png";
 import Plantation from "../../../assets/media/images/Hero_Image.png";
-import ContactForm from "../../Elements/Contact_Form/ContactForm";
+import ContactForm from "../../Elements/Form/NewsletterForm/NewsletterForm";
 
 const HeroSection = () => {
   const container = {
@@ -53,13 +53,10 @@ const HeroSection = () => {
             optio accusantium.
           </p>
           <div className={`w-full flex justify-start items-start`}>
-
-
-          <ContactForm
-            placeholder={`Let's get in touch, input your email address`}
-          />
+            <ContactForm
+              placeholder={`Let's get in touch, input your email address`}
+            />
           </div>
-
         </header>
         <motion.section
           className={`grid grid-cols-2 gap-2 px-5 md:px-10`}

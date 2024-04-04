@@ -1,10 +1,10 @@
 import React, { useState, useRef } from "react";
-import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const ContactForm = ({placeholder}) => {
+const NewsletterForm = ({placeholder}) => {
   const form = useRef();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [stateMessage, setStateMessage] = useState(null);
@@ -77,4 +77,4 @@ const ContactForm = ({placeholder}) => {
   );
 };
 
-export default ContactForm;
+export default NewsletterForm;

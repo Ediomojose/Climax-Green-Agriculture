@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ContactForm from "../Contact_Form/ContactForm";
+import ContactForm from "../Form/NewsletterForm/NewsletterForm";
 import { NavLink } from "react-router-dom";
 import NavBarData from "../../../data/navigationData/NavBarData";
 import SocialMediaData from "../../../data/socialMediaData/SocialMediaData";
@@ -8,7 +8,9 @@ const WebFooter = () => {
   return (
     <>
       <motion.footer className={``}>
-        <div className={`bg-brandLightGreen2x py-8 flex justify-center items-center`}>
+        <div
+          className={`bg-brandLightGreen2x py-8 flex justify-center items-center`}
+        >
           <ContactForm />
         </div>
         <section
@@ -41,7 +43,9 @@ const WebFooter = () => {
               })}
             </ul>
           </div>
-          <p className={`text-xs md:text-sm font-remItalic`}>&#169; Copyright 2024 - Climax Green Agriculture </p>
+          <p className={`text-xs md:text-sm font-remItalic`}>
+            &#169; Copyright 2024 - Climax Green Agriculture{" "}
+          </p>
         </section>
       </motion.footer>
     </>
