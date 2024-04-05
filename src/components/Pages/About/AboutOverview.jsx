@@ -1,4 +1,3 @@
-import HeroImg from "../../../assets/media/images/Hero_Image.png";
 import Gallery from "../../../assets/media/images/countryside-man-disinfecting-field.jpg";
 
 const AboutOverview = () => {
