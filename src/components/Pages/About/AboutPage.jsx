@@ -1,10 +1,13 @@
 import React from 'react'
 import TemplateWrapper from '../../../widget/TemplateWrapper'
+import AboutOverview from './AboutOverview'
+import TeamBanner from './TeamBanner'
 
 const AboutPage = () => {
   return (
     <TemplateWrapper>
-        About Page
+       <AboutOverview/>
+       <TeamBanner/>
     </TemplateWrapper>
   )
 }

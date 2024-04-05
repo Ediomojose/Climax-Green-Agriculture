@@ -8,9 +8,10 @@ const FormWrapper = () => {
     <>
       <header className={`flex flex-col justify-center items-center pt-42`}>
         <img src={CassavaLeaf} alt="cassava leaf cassava plantation climax green agriculture"/>
-        <div className={`pb-3 flex flex-col justify-center items-center`}>
+        <div className={`pb-3 flex flex-col justify-center items-center pt-5`}>
           <img
             src={CassavaSVG}
+            className={`w-10`}
             alt="Raw cassava and processed cassava --- garri climax green agriculture"
           />
           <p className={`font-centurygothicBold text-lg text-brandBrown2x`}>Get in Touch With Us</p>

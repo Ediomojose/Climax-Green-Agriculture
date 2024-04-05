@@ -39,13 +39,13 @@ const HeroSection = () => {
             Rooted in Sustainability:
           </h1>
           <h1
-            className={`text-4xl md:text-5xl lg:text-5xl font-remBlack text-brandGreen3x font-bold`}
+            className={`text-4xl md:text-5xl lg:text-5xl font-remBlack text-brandGreen1x font-bold`}
           >
             {" "}
             Empowering Farmers, Nourishing Communities
           </h1>
           <p
-            className={`text-sm md:text-md py-5 font-centurygothicRegular leading-snug`}
+            className={`text-sm md:text-md py-5 font-remRegular leading-snug`}
           >
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia unde
             iusto totam nisi doloremque nulla? Facere, error magnam ratione qui
