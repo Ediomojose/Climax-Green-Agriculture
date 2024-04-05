@@ -7,8 +7,9 @@ const AboutOverview = () => {
       <section className="">
         <header className={`flex flex-col justify-center items-center pt-42`}>
           <img
-            src={HeroImg}
+            src='https://res.cloudinary.com/drkfpblmu/image/upload/v1712340915/Climax%20Green%20Agriculture/Hero_Image_rndmnf.png'
             alt="cassava leaf cassava plantation climax green agriculture"
+            loading="lazy"
             className={`w-full relative brightness-50`}
           />
           <h1
