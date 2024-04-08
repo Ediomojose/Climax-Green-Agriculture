@@ -1,3 +1,4 @@
+import HeroImg from "../../../assets/media/images/Hero_Image.png";
 import Gallery from "../../../assets/media/images/countryside-man-disinfecting-field.jpg";
 
 const AboutOverview = () => {
@@ -12,7 +13,7 @@ const AboutOverview = () => {
             className={`w-full relative brightness-50`}
           />
           <h1
-            className={`absolute font-remBlack text-6xl pt-10 md:text-7xl lg:text-8xl text-brandWhite1x shadow-2xl`}
+            className={`absolute font-remBlack text-6xl pt-10 md:text-7xl lg:text-8xl text-brandWhite1x drop-shadow-2xl`}
           >
             About Us
           </h1>
