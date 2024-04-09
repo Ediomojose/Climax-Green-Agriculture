@@ -1,34 +1,34 @@
 const Testimonials = () => {
   const testimonies = [
     {
-      author: "Henry Agu",
+      author: "Mrs. Egodi Nnalue",
       testimony:
-        "Starting early laid the foundation for my tech career. As ateenager, diving into coding and robotics sparked my passion fortechnology, setting me on a trajectory towards success in the industry.",
-      profession: "FrontEnd Developer",
+        "I used to cultivate very small plots of cassava farm because there were no buyers. Thanks to Climax Green since they started mechanized processing of cassava, they now serve as a market for us to sell our cassava produces",
+      profession: "Cassava Farmaer",
     },
     {
-      author: "Ediomo Jose",
+      author: "Monica Okwuigbo",
       testimony:
-        "Early exposure to technology opened doors I never imagined. From building my first website in middle school to developing apps in high school, those early experiences equipped me with the skills and confidence to thrive in the tech world",
+        "Before Climax Green, processing cassava to Garri was a rigorous process and it took days. Now, I can process my cassava to Garri within just a few hours.",
       profession: "Software Developer",
     },
     {
-      author: "Kalu Daniel",
+      author: "Nze Chukwuma Onyema",
       testimony:
-        "Beginning my tech journey early gave me a competitive edge. By the time I entered college, I had already interned at tech companies and contributed to open-source projects, positioning myself as a standout candidate for future opportunities",
-      profession: "Software Developer",
+        "Climax Green has brought great relief for us farmers, especially cassava farmers. We can do farm and know there is someone to buy it anytime we want to sell. I really thank God, and I pray God should give them the resources they need to complete the digital platform they are creating for Farmers so that other non-cassava farmers will benefit",
+      profession: "Cassava Farmaer",
     },
     {
       author: "Philip Anthony",
       testimony:
         "Starting early allowed me to make mistakes and learn from them. As a young entrepreneur experimenting with different tech ventures, I gained invaluable insights and resilience that continue to shape my approach to innovation and problem-solving.",
-      profession: "Software Developer",
+      profession: "Cassava Farmaer",
     },
     {
       author: "Ozor Bryan",
       testimony:
         "Early immersion in tech cultivated a lifelong passion for learning. From tinkering with hardware to exploring the latest programming languages, my journey from a young age instilled in me a curiosity and hunger for knowledge that drives me forward every day.",
-      profession: "Software Developer",
+      profession: "Cassava Farmaer",
     },
   ];
   return (
@@ -58,7 +58,7 @@ const Testimonials = () => {
           >
             {testimonies.map((testimony, index) => (
               <div
-                className={`grid grid-cols-1 gap-4 justify-center items-center w-full  shrink-0   bg-brandWhite1x/80 p-5 px-10 rounded-xl shadow-xl md:w-2/5`}
+                className={`grid grid-cols-1 gap-4 justify-center items-center w-full h-full lg:min-w-[439px] min-h-[281px]  shrink-0   bg-brandWhite1x/80 p-5 px-10 rounded-xl shadow-xl md:w-2/5`}
                 key={index}
               >
                 <p className={`text-6xl font-euclidItalicBold`}>
@@ -82,7 +82,7 @@ const Testimonials = () => {
                     </defs>
                   </svg>
                 </p>
-                <div className={`flex gap-4`}>
+                <div className={`flex gap-4 `}>
                   <div>
                     <p className={`text-md font-remBold`}>{testimony.author}</p>
                     <p className={`text-xxs font-remBoldItalic md:text-xs`}>

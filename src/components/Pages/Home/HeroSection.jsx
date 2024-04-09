@@ -29,7 +29,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <main className={`grid grid-cols-1 lg:grid-cols-2 gap-5 py-28`}>
+      <main className={`grid grid-cols-1 justify-center items-center lg:grid-cols-2 gap-5 py-28`}>
         <header
           className={`flex flex-col justify-center items-start w-full px-5 md:px-10`}
         >
@@ -44,18 +44,14 @@ const HeroSection = () => {
             {" "}
             Empowering Farmers, Nourishing Communities
           </h1>
-          <p
-            className={`text-sm md:text-md py-5 font-remRegular leading-snug`}
-          >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia unde
-            iusto totam nisi doloremque nulla? Facere, error magnam ratione qui
-            inventore molestias praesentium iusto doloribus architecto hic vitae
-            optio accusantium.
+          <p className={`text-base md:text-lg py-5 font-remRegular leading-snug`}>
+            Welcome to Climax Green, where innovation meets tradition in
+            agriculture. We specialize in the agricultural sector with a primary
+            focus on the cultivation and processing of cassava into essential
+            staple food products.
           </p>
           <div className={`w-full flex justify-start items-start`}>
-            <ContactForm
-              placeholder={`Let's get in touch, input your email address`}
-            />
+            
           </div>
         </header>
         <motion.section
