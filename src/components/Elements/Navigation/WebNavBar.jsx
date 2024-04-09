@@ -52,9 +52,6 @@ const WebNavBar = ({}) => {
             })}
           </ul>
           <div className={`flex items-center justify-center gap-5`}>
-            <NavLink to="">
-              <button type="button" className={`bg-brandGreen1x px-4 py-1 rounded shadow-2xl text-brandWhite1x`}>Register</button>
-            </NavLink>
             <button
               type="button"
               className={`md:hidden`}

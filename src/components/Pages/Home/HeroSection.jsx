@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import Farmer from "../../../assets/media/images/countryside-man-disinfecting-field.jpg";
 import FarmerOnBike from "../../../assets/media/images/countryside-people-working-field.jpg";
@@ -51,7 +52,9 @@ const HeroSection = () => {
             staple food products.
           </p>
           <div className={`w-full flex justify-start items-start`}>
-            
+          <NavLink to="/contact">
+              <button type="button" className={`px-7 py-2 bg-brandBrown2x rounded shadow-xl font-remMedium text-brandWhite1x`}>Contact Us</button>
+            </NavLink>
           </div>
         </header>
         <motion.section
