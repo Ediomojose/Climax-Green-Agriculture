@@ -8,14 +8,25 @@ const AboutOverview = () => {
         <header
           className={`flex flex-col justify-center items-center pt-42  px-5 md:px-20 lg:px-40`}
         >
-          <div className= {`lg:px-28`}>
+          <div className={`lg:px-28`}>
             <h1
               className={`font-remBlack text-3xl pt-28 pb-5 text-center md:text-5xl lg:text-7xl  drop-shadow-lg text-brandGreen1x`}
             >
-              Your trusted partner in <span className={`text-brandBrown2x`}>sustainable</span> agriculture
+              Your trusted partner in{" "}
+              <span className={`text-brandBrown2x`}>sustainable</span>{" "}
+              agriculture
             </h1>
-            <p className={`font-remRegular text-center pb-5 text-sm md:text-base lg:text-xl`}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quos a aperiam, qui sapiente placeat nostrum. Minus eos, hic tempora quaerat quo non, modi corrupti assumenda autem architecto placeat totam. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p
+              className={`font-remRegular text-center pb-5 text-sm md:text-base lg:text-xl`}
+            >
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Explicabo quos a aperiam, qui sapiente placeat nostrum. Minus eos,
+              hic tempora quaerat quo non, modi corrupti assumenda autem
+              architecto placeat totam. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit.
+            </p>
           </div>
+
           <img
             src="https://res.cloudinary.com/drkfpblmu/image/upload/v1712340915/Climax%20Green%20Agriculture/Hero_Image_rndmnf.png"
             alt="cassava leaf cassava plantation climax green agriculture"
@@ -54,7 +65,7 @@ const AboutOverview = () => {
             </div>
           </article>
           <img
-            src={Gallery}
+            src="https://res.cloudinary.com/dtiqegodx/image/upload/v1713104252/Climax%20Green%20Agriculture/IMG_20240412_135331_393_hsxnct.jpg"
             alt="Climax Green Agriculture"
             srcset=""
             className={``}

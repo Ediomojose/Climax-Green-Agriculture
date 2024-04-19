@@ -3,9 +3,8 @@ import { NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import navBarData from "../../../data/navigationData/NavBarData";
 import ClimaxGreenLogo from "../../../assets/media/logos/climax.png";
-import HambuggerMenu from '../../../assets/media/icons/hamburger menu.png'
-import Cross from '../../../assets/media/icons/cross.png'
-
+import HambuggerMenu from "../../../assets/media/icons/hamburger menu.png";
+import Cross from "../../../assets/media/icons/cross.png";
 
 const WebNavBar = ({}) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,6 +50,14 @@ const WebNavBar = ({}) => {
               );
             })}
           </ul>
+          <NavLink to="/contact">
+            <button
+              type="button"
+              className={`px-7 py-2 mr-4 bg-brandBrown2x rounded shadow-lg font-remMedium text-brandWhite1x`}
+            >
+              Register
+            </button>
+          </NavLink>
           <div className={`flex items-center justify-center gap-5`}>
             <button
               type="button"

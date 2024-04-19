@@ -28,11 +28,17 @@ const Statement = () => {
             Our Vision
           </h1>
           <p className={`text-base font-josefinsansRegular text-justify	`}>
-            Located in a spacious and serene environment in Igwuruta, Rivers
-            State, Nigeria. Lonefa Integrated Farm is poised to revolutionize
-            farming and agricultural practice by developing quality products in
-            a hygienic environment, with affordable prices for local, national
-            and international consumption.
+            At Climax Green, we envision a future where sustainable agriculture
+            thrives, empowering local farmers, nourishing communities, and
+            promoting environmental stewardship. Our vision is to revolutionize
+            the agricultural sector by harnessing the potential of cassava,
+            transforming it into essential staple foods and innovative products
+            while pioneering digital solutions that connect farmers directly
+            with consumers. Through our commitment to organic farming practices,
+            technological innovation, and community engagement, we strive to
+            create a world where everyone has access to nutritious food,
+            economic opportunities flourish, and agricultural ecosystems are
+            resilient and vibrant
           </p>
         </aside>
       </section>

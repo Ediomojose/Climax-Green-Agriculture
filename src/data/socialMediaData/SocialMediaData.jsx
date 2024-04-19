@@ -13,7 +13,7 @@ const SocialMediaData = [
 
   {
     svg: <XSVG />,
-    link: "",
+    link: "https://twitter.com/ClimaxGreen/",
   },
 
   {
@@ -23,7 +23,7 @@ const SocialMediaData = [
 
   {
     svg: <WhatsappSVG />,
-    link: "https://wa.me/08156754404",
+    link: "https://wa.me/+2348137235638",
   },
 ];
 

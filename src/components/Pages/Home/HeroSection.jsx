@@ -53,7 +53,7 @@ const HeroSection = () => {
           </p>
           <div className={`w-full flex justify-start items-start`}>
           <NavLink to="/contact">
-              <button type="button" className={`px-7 py-2 bg-brandBrown2x rounded shadow-xl font-remMedium text-brandWhite1x`}>Contact Us</button>
+              <button type="button" className={`px-7 py-2 bg-brandBrown2x rounded shadow-xl font-remMedium text-brandWhite1x`}>Register</button>
             </NavLink>
           </div>
         </header>

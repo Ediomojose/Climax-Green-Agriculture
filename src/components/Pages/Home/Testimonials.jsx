@@ -10,7 +10,7 @@ const Testimonials = () => {
       author: "Monica Okwuigbo",
       testimony:
         "Before Climax Green, processing cassava to Garri was a rigorous process and it took days. Now, I can process my cassava to Garri within just a few hours.",
-      profession: "Software Developer",
+      profession: "Cassava Farmaer",
     },
     {
       author: "Nze Chukwuma Onyema",
@@ -19,15 +19,27 @@ const Testimonials = () => {
       profession: "Cassava Farmaer",
     },
     {
-      author: "Philip Anthony",
+      author: "Abdullahi S.",
       testimony:
-        "Starting early allowed me to make mistakes and learn from them. As a young entrepreneur experimenting with different tech ventures, I gained invaluable insights and resilience that continue to shape my approach to innovation and problem-solving.",
+        "I've been a loyal customer of Climax Green since they started, and I can't recommend their products enough! The Garri is always top-notch, and the convenience of ordering online and having it delivered to my doorstep is unbeatable. Plus, knowing that I'm supporting local farmers and sustainable agriculture makes it a win-win!",
       profession: "Cassava Farmaer",
     },
     {
-      author: "Ozor Bryan",
+      author: "Chukwuebuka O.",
       testimony:
-        "Early immersion in tech cultivated a lifelong passion for learning. From tinkering with hardware to exploring the latest programming languages, my journey from a young age instilled in me a curiosity and hunger for knowledge that drives me forward every day.",
+        "I can't get enough of Climax Green's Garri! As someone with gluten sensitivities, finding a gluten-free staple like Garri has been a game-changer for me. The coarse texture Garri is my go-to for making snacks like Garri soakings. It's delicious, nutritious, and supports sustainable farming practices. What more could you ask for?",
+      profession: "Cassava Farmaer",
+    },
+    {
+      author: "Elena M.",
+      testimony:
+        "I've been buying Garri from Climax Green for years, and it never disappoints! The fine texture Garri is my favorite for making eba. It's always fresh and has that authentic taste I love. Plus, knowing that I'm supporting local farmers and sustainable agriculture makes it even better!",
+      profession: "Cassava Farmaer",
+    },
+    {
+      author: "Michael K.",
+      testimony:
+        "I recently started using Climax Green's HQCP for my poultry farm, and I'm impressed with the results! My chickens love it, and I've noticed an improvement in their overall health and egg production. It's great to have a high-quality, affordable feed option that also helps reduce food waste",
       profession: "Cassava Farmaer",
     },
   ];

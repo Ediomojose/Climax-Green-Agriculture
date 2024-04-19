@@ -1,52 +1,45 @@
 const TeamDetails = [
   {
-    fullName: "Henry Agu",
-    img: "https://res.cloudinary.com/drkfpblmu/image/upload/v1712340911/Climax%20Green%20Agriculture/team-1-1_xe2sir.png",
-    role: "Farm Manager",
+    fullName: "Emmanuel Eluba",
+    img: "https://res.cloudinary.com/dtiqegodx/image/upload/v1713104419/Climax%20Green%20Agriculture/DRAMFUN_pyoilz.jpg",
+    role: "Co-founder/Managing Partner",
   },
 
   {
-    fullName: "Henry Agu",
-    img: "https://res.cloudinary.com/drkfpblmu/image/upload/v1712340911/Climax%20Green%20Agriculture/team-1-1_xe2sir.png",
-    role: "Farm Manager",
+    fullName: "Stephen Ebuka Onyema-Osuji",
+    img: "https://res.cloudinary.com/dtiqegodx/image/upload/v1713104257/Climax%20Green%20Agriculture/Screenshot_20240413-081529_o3b9xv.jpg",
+    role: "Co-founder/ Chief Operating Officer (COO)",
   },
 
   {
-    fullName: "Henry Agu",
-    img: "https://res.cloudinary.com/drkfpblmu/image/upload/v1712340911/Climax%20Green%20Agriculture/team-1-1_xe2sir.png",
-    role: "Farm Manager",
+    fullName: "Uchenu Francis",
+    img: "https://res.cloudinary.com/dtiqegodx/image/upload/v1713104248/Climax%20Green%20Agriculture/IMG-20240411-WA0003_phlzef.jpg",
+    role: "Chief Marketing Officer(CMO)",
   },
 
   {
-    fullName: "Henry Agu",
-    img: "https://res.cloudinary.com/drkfpblmu/image/upload/v1712340911/Climax%20Green%20Agriculture/team-1-1_xe2sir.png",
-    role: "Farm Manager",
+    fullName: "Ifeoma Victoria Ugboaja",
+    img: "https://res.cloudinary.com/dtiqegodx/image/upload/v1713104262/Climax%20Green%20Agriculture/IMG_20240412_135614_rx3gxh.jpg",
+    role: "HR Director",
   },
 
   {
-    fullName: "Henry Agu",
-    img: "https://res.cloudinary.com/drkfpblmu/image/upload/v1712340911/Climax%20Green%20Agriculture/team-1-1_xe2sir.png",
-    role: "Farm Manager",
+    fullName: "Oguama Chukwunonso",
+    img: "https://res.cloudinary.com/dtiqegodx/image/upload/v1713104160/Climax%20Green%20Agriculture/IMG_20230806_111535-removebg-preview_jhklll.png",
+    role: "Head of Partnership and Community Engagement",
   },
 
   {
-    fullName: "Henry Agu",
-    img: "https://res.cloudinary.com/drkfpblmu/image/upload/v1712340911/Climax%20Green%20Agriculture/team-1-1_xe2sir.png",
-    role: "Farm Manager",
+    fullName: "Chidi Darlington Chidiebube",
+    img: "https://res.cloudinary.com/dtiqegodx/image/upload/v1713104252/Climax%20Green%20Agriculture/IMG-20240413-WA0043_dgwnw2.jpg",
+    role: "Head of strategy, innovation and Policy",
   },
 
   {
-    fullName: "Henry Agu",
-    img: "https://res.cloudinary.com/drkfpblmu/image/upload/v1712340911/Climax%20Green%20Agriculture/team-1-1_xe2sir.png",
-    role: "Farm Manager",
+    fullName: "Ikpe Josephine",
+    img: "https://res.cloudinary.com/dtiqegodx/image/upload/v1713444866/ikpe_uykv6j.jpg",
+    role: "Chief Sustainability Officer (CSO)",
   },
-
-  {
-    fullName: "Henry Agu",
-    img: "https://res.cloudinary.com/drkfpblmu/image/upload/v1712340911/Climax%20Green%20Agriculture/team-1-1_xe2sir.png",
-    role: "Farm Manager",
-  },
-
 ];
 
 const TeamBanner = () => {
@@ -63,14 +56,27 @@ const TeamBanner = () => {
             Meet the Team
           </h1>
         </div>
-        <section className={`grid gap-5 grid-cols-2 md:grid-cols-4 justify-center items-center`}>
+        <section
+          className={`grid gap-5 grid-cols-2 md:grid-cols-3 justify-center items-center`}
+        >
           {TeamDetails.map((teamdetail, index) => {
             return (
-              <article className={`flex flex-col items-center justify-center py-5`} key={index}>
-                <img src={teamdetail.img} alt="" className={`rounded-full w-32 h-32 md:w-40 md:h-40`} />
+              <article
+                className={`flex flex-col items-center justify-center py-5`}
+                key={index}
+              >
+                <img
+                  src={teamdetail.img}
+                  alt=""
+                  className={`rounded-full w-32 h-32 md:w-40 md:h-40`}
+                />
                 <div className={`flex flex-col justify-center items-center`}>
-                  <h1 className={`font-remMedium text-base`}>{teamdetail.fullName}</h1>
-                  <p className={`font-remRegular text-xs `}>{teamdetail.role}</p>
+                  <h1 className={`font-remMedium text-base`}>
+                    {teamdetail.fullName}
+                  </h1>
+                  <p className={`font-remRegular text-xs `}>
+                    {teamdetail.role}
+                  </p>
                 </div>
               </article>
             );

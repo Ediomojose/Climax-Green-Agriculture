@@ -5,43 +5,64 @@ const FaqSection = () => {
   const faqs = [
     {
       id: 1,
-      question: "What makes Cascade stand out ?",
+      question: "What is Garri?",
       answer:
-        "Our platform stands out due to its focus on innovation, adaptability, and inclusivity. We integrate cutting-edge technology to personalize learning experiences, ensuring that every individual can thrive regardless of their background or learning style.",
+        "Garri is a traditional West African staple food made from cassava tubers. It is finely ground and fermented, resulting in a versatile and nutritious product. ",
     },
     {
       id: 2,
-      question:
-        "How do you ensure the quality of the educational content on your platform?",
+      question: "What are the benefits of Garri?",
       answer:
-        "We have a rigorous vetting process for educational content, working closely with experts in various fields to curate materials that are accurate, up-to-date, and engaging. Additionally, we continuously gather feedback from users to improve and refine our content offerings.",
+        "Garri is a rich source of carbohydrates and provides essential nutrients. It is gluten-free and suitable for individuals with dietary restrictions. Garri can be used in various culinary applications, such as porridge, fufu, and snacks.",
     },
     {
       id: 3,
-      question: "How does your platform foster collaboration among learners?",
+      question: " What varieties of Garri do you offer?",
       answer:
-        "Collaboration is at the heart of our platform. We offer various features such as discussion forums, group projects, and virtual study sessions to encourage interaction and collaboration among learners. Through these collaborative activities, students can learn from each other, exchange ideas, and deepen their understanding of the subject matter.",
+        "We offer a range of Garri varieties, including regular, fine, and coarse textures, to suit different preferences and culinary needs.",
     },
     {
       id: 4,
-      question:
-        "How do you measure the effectiveness and impact of your educational solutions?",
+      question: "What are Cassava Peel Products (HQCP)?",
       answer:
-        "We employ a variety of metrics and assessment tools to measure the effectiveness and impact of our educational solutions, including learner performance data, feedback surveys, and qualitative assessments, allowing us to continuously improve and refine our offerings.",
+        "Cassava Peel Products (HQCP) are nutritious feed options for livestock made from dried and processed cassava peels. They are high in fiber and provide a low-cost alternative feed source for animals.",
     },
     {
       id: 5,
-      question:
-        "What kind of technology and tools do you use to enhance the learning experience?",
+      question: "What are the benefits of Cassava Peel Products (HQCP)",
       answer:
-        "We leverage a range of technologies and tools, including AI-driven adaptive learning algorithms,  and interactive multimedia resources, to enhance the learning experience and engage learners effectively.",
+        "Cassava Peel Products (HQCP) improve animal health and productivity, reduce feed costs, and contribute to sustainable agriculture practices by utilizing cassava peels that would otherwise go to waste.",
     },
     {
       id: 6,
-      question:
-        "Can your platform accommodate learners of all ages and educational backgrounds?",
+      question: "How can I place an order?",
       answer:
-        "Yes, our platform is designed to cater to learners of all ages and educational backgrounds, from higher primary students to lifelong learners seeking professional development opportunities.",
+        "You can place an order for our products through our website's online ordering system. Simply browse our product catalog, select the items you wish to purchase, and proceed to checkout. For further assistance, you can contact us via phone or email.",
+    },
+    {
+      id: 7,
+      question: "Do you offer bulk ordering options?",
+      answer:
+        "Yes, we offer bulk ordering options for customers who require larger quantities of our products. Please contact us directly to discuss your specific needs and to receive pricing and availability information. ",
+    },
+    {
+      id: 8,
+      question:
+        "What measures do you take to ensure the quality and safety of your products?",
+      answer:
+        "At Climax Green, we are committed to maintaining the highest standards of quality and safety for our products. We adhere to strict quality control measures, including sourcing from trusted suppliers, conducting regular testing and inspections, and complying with relevant food safety regulations.",
+    },
+    {
+      id: 9,
+      question: "What are your delivery options?",
+      answer:
+        "We offer various delivery options to accommodate our customers' needs. Delivery methods may include local pickup, courier services, or shipping via postal carriers. Delivery charges and timelines may vary depending on your location and order size.",
+    },
+    {
+      id: 10,
+      question: "Can I find your products in local stores?",
+      answer:
+        "Currently, our products are available for purchase exclusively through our website. However, we are continually exploring partnerships with local retailers and distributors to expand our presence in the market.",
     },
   ];
   return (
