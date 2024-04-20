@@ -1,6 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { motion } from "framer-motion";
+import {
+  motion,
+  useInView,
+  useMotionValueEvent,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 import Farmer from "../../../assets/media/images/countryside-man-disinfecting-field.jpg";
 import FarmerOnBike from "../../../assets/media/images/countryside-people-working-field.jpg";
 import Cassava from "../../../assets/media/images/3.png";
@@ -8,29 +14,15 @@ import Plantation from "../../../assets/media/images/Hero_Image.png";
 import ContactForm from "../../Elements/Form/NewsletterForm/NewsletterForm";
 
 const HeroSection = () => {
-  const container = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const item = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-    },
-  };
-
   return (
     <>
-      <main className={`grid grid-cols-1 justify-center items-center lg:grid-cols-2 gap-5 py-28`}>
+      <motion.main
+        initial={{
+          opacity: 0,
+        }}
+        whileInView={{ opacity: 1 }} viewport={{amount:"all"}}
+        className={`grid grid-cols-1 justify-center items-center lg:grid-cols-2 gap-5 py-28`}
+      >
         <header
           className={`flex flex-col justify-center items-start w-full px-5 md:px-10`}
         >
@@ -45,30 +37,33 @@ const HeroSection = () => {
             {" "}
             Empowering Farmers, Nourishing Communities
           </h1>
-          <p className={`text-base md:text-lg py-5 font-remRegular leading-snug`}>
+          <p
+            className={`text-base md:text-lg py-5 font-remRegular leading-snug`}
+          >
             Welcome to Climax Green, where innovation meets tradition in
             agriculture. We specialize in the agricultural sector with a primary
             focus on the cultivation and processing of cassava into essential
             staple food products.
           </p>
           <div className={`w-full flex justify-start items-start`}>
-          <NavLink to="/contact">
-              <button type="button" className={`px-7 py-2 bg-brandBrown2x rounded shadow-xl font-remMedium text-brandWhite1x`}>Register</button>
+            <NavLink to="/contact">
+              <button
+                type="button"
+                className={`px-7 py-2 bg-brandBrown2x rounded shadow-xl font-remMedium text-brandWhite1x`}
+              >
+                Register
+              </button>
             </NavLink>
           </div>
         </header>
-        <motion.section
+        <section
           className={`grid grid-cols-2 gap-2 px-5 md:px-10`}
-          variants={container}
-          initial="hidden"
-          animate="visible"
         >
           <div className={` `}>
             <img
               src={Farmer}
               alt="Climax Green Agriculture: Farmer peeling cassava"
               className={` `}
-              variants={item}
             />
           </div>
           <div className={``}>
@@ -76,7 +71,6 @@ const HeroSection = () => {
               src={FarmerOnBike}
               alt="Climax Green Agriculture: Farmer carrying cassava on bike"
               className={` `}
-              variants={item}
             />
           </div>
           <div className={``}>
@@ -84,7 +78,6 @@ const HeroSection = () => {
               src={Cassava}
               alt="Climax Green Agriculture: Farmer peeling cassava"
               className={``}
-              variants={item}
             />
           </div>
           <div className={``}>
@@ -92,11 +85,10 @@ const HeroSection = () => {
               src={Farmer}
               alt="Climax Green Agriculture: Farmer carrying cassava on bike"
               className={``}
-              variants={item}
             />
           </div>
-        </motion.section>
-      </main>
+        </section>
+      </motion.main>
     </>
   );
 };
