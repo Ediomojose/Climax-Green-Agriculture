@@ -1,37 +1,36 @@
-  
 const benefitOfProduct = [
   {
     header: "Fresh, Local Produce",
     breakdownPragraph:
-      "Our digital marketplace connects farmers directly to local and global markets, eliminating intermediaries and ensuring fair prices.",
+      " Customers enjoy fresh, locally sourced products directly from farmers, promoting sustainability and ethical consumption.",
   },
 
   {
     header: "Nutritious Options",
     breakdownPragraph:
-      " Partnering with Climax Green promotes sustainable farming methods, preserving soil health and biodiversity.",
+      " Our products offer essential nutrients without additives, providing a healthy alternative to processed foods.",
   },
   {
     header: "Gluten-Free and Allergen-Friendly",
     breakdownPragraph:
-      "We offer training programs to empower farmers with the knowledge and skills needed for success.",
+      " Naturally gluten-free and allergen-free, our products accommodate diverse dietary needs.",
   },
 
   {
     header: "Convenience",
     breakdownPragraph:
-      "Farmers can sell more produce and earn higher income by reaching a wider market through Climax Green's platform.",
+      "Our online platform enables easy ordering and delivery, saving customers time and effort.",
   },
   {
     header: "Transparent Sourcing",
     breakdownPragraph:
-      " Our platform helps minimize post-harvest losses by providing a reliable market for farmers' produce, reducing waste and maximizing value.",
+      " Customers can trace their food's journey from farm to table, ensuring ethical and sustainable practices.",
   },
 
   {
     header: "Variety",
     breakdownPragraph:
-      "Supporting local farmers contributes to the economic development and resilience of rural communities",
+      "Our products offer culinary versatility, catering to traditional and innovative tastes alike.",
   },
 ];
 
@@ -42,7 +41,9 @@ const ProductBenefit = () => {
         <div
           className={`p-5 lg:p-16 rounded-3xl shadow-sm bg-brandLightGreen3x `}
         >
-          <h1 className={`text-xl md:text-2xl lg:text-4xl font-josefinsansBold text-brandGreen1x`}>
+          <h1
+            className={`text-xl md:text-2xl lg:text-4xl font-josefinsansBold text-brandGreen1x`}
+          >
             Benefit of our Products
           </h1>
           <aside className={`grid md:grid-cols-2 gap-3 py-10`}>
@@ -57,7 +58,9 @@ const ProductBenefit = () => {
                   >
                     {benefitOfProduct.header}
                   </h1>
-                  <p className={`font-remRegular text-xm md:text-base text-brand`}>
+                  <p
+                    className={`font-remRegular text-xm md:text-base text-brand`}
+                  >
                     {benefitOfProduct.breakdownPragraph}
                   </p>
                 </article>
@@ -66,8 +69,6 @@ const ProductBenefit = () => {
           </aside>
         </div>
       </section>
-
-      
     </>
   );
 };
