@@ -5,11 +5,10 @@ const TemplateWrapper = ({ children }) => {
   return (
     <main>
       <WebNavBar />
-      {children}
+      <main className={`flex flex-col justify-center pt-20`}>{children}</main>
       <WebFooter />
     </main>
   );
 };
-
 
 export default TemplateWrapper;

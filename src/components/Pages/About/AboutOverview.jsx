@@ -4,13 +4,13 @@ import Gallery from "../../../assets/media/images/countryside-man-disinfecting-f
 const AboutOverview = () => {
   return (
     <>
-      <section className="">
+      <section className={`pt-10`}>
         <header
           className={`flex flex-col justify-center items-center pt-42  px-5 md:px-20 lg:px-40`}
         >
           <div className={`lg:px-28`}>
             <h1
-              className={`font-remBlack text-3xl pt-28 pb-5 text-center md:text-5xl lg:text-7xl  drop-shadow-lg text-brandGreen1x`}
+              className={`font-remBlack text-3xl pb-5 text-center md:text-5xl lg:text-7xl  drop-shadow-lg text-brandGreen1x`}
             >
               Your trusted partner in{" "}
               <span className={`text-brandBrown2x`}>sustainable</span>{" "}
@@ -19,11 +19,9 @@ const AboutOverview = () => {
             <p
               className={`font-remRegular text-center pb-5 text-sm md:text-base lg:text-xl`}
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Explicabo quos a aperiam, qui sapiente placeat nostrum. Minus eos,
-              hic tempora quaerat quo non, modi corrupti assumenda autem
-              architecto placeat totam. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit.
+              We support sustainable agriculture, prioritize high-quality
+              products, operate with honesty and transparency, empower local
+              farmers, embrace innovation, and foster resilient communities.
             </p>
           </div>
 

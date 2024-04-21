@@ -1,26 +1,38 @@
 const values = [
   {
-    header: "Customer-focus",
+    header: "Sustainability",
+    breakdownPragraph:
+      "We prioritize eco-friendly farming methods to protect the environment and ensure a healthier planet for future generations.",
+  },
+
+  {
+    header: "Quality",
+    breakdownPragraph:
+      " We're dedicated to delivering top-notch products sourced from local farmers who share our commitment to excellence.",
+  },
+
+  {
+    header: "Integrity",
     breakdownPragraph:
       "We build solutions we know you need, not just what we think you need. Our products are a result of painstaking research backed by customer validation.",
   },
 
   {
-    header: "Customer-focus",
+    header: "Empowerment",
     breakdownPragraph:
-      "We build solutions we know you need, not just what we think you need. Our products are a result of painstaking research backed by customer validation.",
+      " We support local farmers, particularly women and youth, by providing access to markets and resources for success.",
   },
 
   {
-    header: "Customer-focus",
+    header: "Innovation",
     breakdownPragraph:
-      "We build solutions we know you need, not just what we think you need. Our products are a result of painstaking research backed by customer validation.",
+      "We embrace technology and modern practices to revolutionize food production, distribution, and consumption for a more efficient and sustainable supply chain.",
   },
 
   {
-    header: "Customer-focus",
+    header: "Community",
     breakdownPragraph:
-      "We build solutions we know you need, not just what we think you need. Our products are a result of painstaking research backed by customer validation.",
+      "We work to build strong, collaborative communities through partnerships and initiatives that promote social cohesion and economic empowerment.",
   },
 ];
 
@@ -37,13 +49,11 @@ const BannerBlock = () => {
             Our Values
           </h1>
           <p className={`font-remRegular text-sm md:text-base`}>
-            Pandascrow is a technology company that solves payment problems for
-            ambitious businesses. Our mission is to provide African businesses &
-            individuals with safety, ease and flexibility when carrying out
-            online transactions.
+          Climax Green is guided by core values of sustainability, quality, integrity, empowerment, innovation, and community.
+
           </p>
         </div>
-        <aside className={`grid md:grid-cols-2 gap-3 py-16`}>
+        <aside className={`grid md:grid-cols-3 gap-3 py-10`}>
           {values.map((value, index) => {
             return (
               <article
@@ -51,11 +61,11 @@ const BannerBlock = () => {
                 key={index}
               >
                 <h1
-                  className={`text-xl md:text-2xl lg:text-4xl font-remBlack pb-5`}
+                  className={`text-xl md:text-2xl lg:text-3xl font-remBlack pb-5`}
                 >
                   {value.header}
                 </h1>
-                <p className={`font-remRegular text-sm md:text-base`}>
+                <p className={`font-remRegular text-sm`}>
                   {value.breakdownPragraph}
                 </p>
               </article>

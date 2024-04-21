@@ -24,6 +24,7 @@ const NavBarData = [
         link: '/contact',
         end: false
     },
+
 ]
 
 export default NavBarData

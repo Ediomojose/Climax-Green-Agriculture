@@ -8,6 +8,7 @@ import CalltoAction from "./CalltoAction";
 import FaqSection from "../../Elements/FAQ/FAQSection";
 import SeoWrapper from "../../../SEO/SeoWrapper";
 import { Helmet } from "react-helmet-async";
+import ProductBenefit from "./ProductBenefit";
 
 <SeoWrapper title={"Climax Green Agriculture"} pageName={`Home Page`} />;
 
@@ -56,6 +57,7 @@ const HomePage = () => {
       <TemplateWrapper>
         <HeroSection />
         <IntroductionSection />
+        <ProductBenefit/>
         <Testimonials />
         <Banner />
         <FaqSection />

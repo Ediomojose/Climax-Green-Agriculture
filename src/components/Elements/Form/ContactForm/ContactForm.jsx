@@ -35,13 +35,13 @@ const ContactForm = () => {
       const errors = {};
       if (!values.firstName) {
         errors.firstName = "Input field cannot be empty";
-      } else if (values.firstName.length > 15) {
+      } else if (values.firstName.length <= 15) {
         errors.firstName = "Must be 15 characters or less";
       }
     
       if (!values.lastName) {
         errors.lastName = "Input field cannot be empty";
-      } else if (values.lastName.length > 20) {
+      } else if (values.lastName.length <= 15) {
         errors.lastName = "Must be 20 characters or less";
       }
     
@@ -53,7 +53,7 @@ const ContactForm = () => {
     
       if (!values.message) {
         errors.message = "Input field cannot be empty";
-      } else if (values.lastName.length > 50) {
+      } else if (values.message.length >= 50) {
         errors.message = "Must be 50 characters or more";
       }
     

@@ -17,11 +17,8 @@ const HeroSection = () => {
   return (
     <>
       <motion.main
-        initial={{
-          opacity: 0,
-        }}
-        whileInView={{ opacity: 1 }} viewport={{amount:"all"}}
-        className={`grid grid-cols-1 justify-center items-center lg:grid-cols-2 gap-5 py-28`}
+        
+        className={`grid grid-cols-1 justify-center items-center lg:grid-cols-2 gap-5 py-16`}
       >
         <header
           className={`flex flex-col justify-center items-start w-full px-5 md:px-10`}
@@ -51,7 +48,7 @@ const HeroSection = () => {
                 type="button"
                 className={`px-7 py-2 bg-brandBrown2x rounded shadow-xl font-remMedium text-brandWhite1x`}
               >
-                Register
+                Explore Our Marketplace
               </button>
             </NavLink>
           </div>

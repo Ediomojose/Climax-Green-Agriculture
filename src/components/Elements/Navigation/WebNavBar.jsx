@@ -50,12 +50,13 @@ const WebNavBar = ({}) => {
               );
             })}
           </ul>
-          <NavLink to="/contact">
+        
+          <NavLink to="/marketplace">
             <button
               type="button"
               className={`px-7 py-2 mr-4 bg-brandBrown2x rounded shadow-lg font-remMedium text-brandWhite1x`}
             >
-              Register
+              Marketplace
             </button>
           </NavLink>
           <div className={`flex items-center justify-center gap-5`}>

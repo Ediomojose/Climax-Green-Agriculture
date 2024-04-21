@@ -1,38 +1,75 @@
-const benefits = [
+const benefitToFarmers = [
   {
     header: "Access to Market",
     breakdownPragraph:
-      "Climax Green's digital decentralized agricultural marketplace provides farmers with direct access to local and global markets for their produce. This eliminates the need for intermediaries, allowing farmers to sell their products at fair prices and maximize their profits.",
+      "Our digital marketplace connects farmers directly to local and global markets, eliminating intermediaries and ensuring fair prices.",
+  },
+
+  {
+    header: "Sustainable Practices",
+    breakdownPragraph:
+      " Partnering with Climax Green promotes sustainable farming methods, preserving soil health and biodiversity.",
+  },
+  {
+    header: "Training and Support",
+    breakdownPragraph:
+      "We offer training programs to empower farmers with the knowledge and skills needed for success.",
   },
 
   {
     header: "Increased Revenue",
     breakdownPragraph:
-      "We build solutions we know you need, not just what we think you need. Our products are a result of painstaking researBy connecting farmers directly with consumers, Climax Green helps farmers increase their revenue potential. With access to a wider market and fair pricing, farmers can sell more of their produce and generate higher income for themselves and their families.",
+      "Farmers can sell more produce and earn higher income by reaching a wider market through Climax Green's platform.",
   },
   {
-    header: "Reduced Post-Harvest Losses",
+    header: "Reduced Losses",
     breakdownPragraph:
-      "Many farmers experience significant post-harvest losses due to lack of immediate access to markets or processing facilities. Climax Green's platform helps reduce these losses by providing farmers with a reliable market for their produce, minimizing waste and maximizing the value of their harvest.",
-  },
-
-  {
-    header: "Market Information and Insights",
-    breakdownPragraph:
-      "Through Climax Green's digital platform, farmers gain access to valuable market information and insights, helping them make informed decisions about what to plant, when to harvest, and where to sell their products. This empowers farmers to optimize their production and marketing strategies for maximum profitability.",
-  },
-  {
-    header: "Support for Sustainable Practices",
-    breakdownPragraph:
-      "Climax Green is committed to promoting sustainable agriculture practices, and by partnering with us, farmers become part of this important movement. Our products are sourced from farmers who employ sustainable farming methods, helping to preserve soil health, biodiversity, and environmental resources for future generations",
+      " Our platform helps minimize post-harvest losses by providing a reliable market for farmers' produce, reducing waste and maximizing value.",
   },
 
   {
-    header: "Training and Capacity Building",
+    header: "Community Development",
     breakdownPragraph:
-      "Climax Green offers training and capacity building programs to empower farmers with the knowledge and skills they need to succeed. Whether it's training in modern agricultural techniques, financial literacy, or digital marketing, we are dedicated to supporting farmers in their journey towards success",
+      "Supporting local farmers contributes to the economic development and resilience of rural communities",
   },
 ];
+
+const benefitToCustomers = [
+  {
+    header: "Fresh, Local Produce",
+    breakdownPragraph:
+      "Our digital marketplace connects farmers directly to local and global markets, eliminating intermediaries and ensuring fair prices.",
+  },
+
+  {
+    header: "Nutritious Options",
+    breakdownPragraph:
+      " Partnering with Climax Green promotes sustainable farming methods, preserving soil health and biodiversity.",
+  },
+  {
+    header: "Gluten-Free and Allergen-Friendly",
+    breakdownPragraph:
+      "We offer training programs to empower farmers with the knowledge and skills needed for success.",
+  },
+
+  {
+    header: "Convenience",
+    breakdownPragraph:
+      "Farmers can sell more produce and earn higher income by reaching a wider market through Climax Green's platform.",
+  },
+  {
+    header: "Transparent Sourcing",
+    breakdownPragraph:
+      " Our platform helps minimize post-harvest losses by providing a reliable market for farmers' produce, reducing waste and maximizing value.",
+  },
+
+  {
+    header: "Variety",
+    breakdownPragraph:
+      "Supporting local farmers contributes to the economic development and resilience of rural communities",
+  },
+];
+
 const BenefitContainer = () => {
   return (
     <>
@@ -44,19 +81,48 @@ const BenefitContainer = () => {
             Benefit to Farmers
           </h1>
           <aside className={`grid md:grid-cols-2 gap-3 py-10`}>
-            {benefits.map((benefit, index) => {
+            {benefitToFarmers.map((benefitToFarmers, index) => {
               return (
                 <article
-                  className={`p-8 lg:p-16 rounded-3xl shadow-sm bg-brandLightGreen4x`}
+                  className={`p-8 lg:p-14 rounded-3xl shadow-sm bg-brandLightGreen4x`}
                   key={index}
                 >
                   <h1
                     className={`text-lg md:text-xl lg:text-2xl font-remBlack pb-5 text-brandBrown2x`}
                   >
-                    {benefit.header}
+                    {benefitToFarmers.header}
                   </h1>
                   <p className={`font-remRegular text-xm md:text-base text-brand`}>
-                    {benefit.breakdownPragraph}
+                    {benefitToFarmers.breakdownPragraph}
+                  </p>
+                </article>
+              );
+            })}
+          </aside>
+        </div>
+      </section>
+
+      <section className={`grid grid-cols-1 p-0 md:p-10`}>
+        <div
+          className={`p-5 lg:p-16 rounded-3xl shadow-sm bg-brandLightGreen3x `}
+        >
+          <h1 className={`text-xl md:text-2xl lg:text-4xl font-remBlack text-brandGreen1x`}>
+          Benefits of Our Products
+          </h1>
+          <aside className={`grid md:grid-cols-2 gap-3 py-10`}>
+            {benefitToCustomers.map((benefitToCustomers, index) => {
+              return (
+                <article
+                  className={`p-8 lg:p-14 rounded-3xl shadow-sm bg-brandLightGreen4x`}
+                  key={index}
+                >
+                  <h1
+                    className={`text-lg md:text-xl lg:text-2xl font-remBlack pb-5 text-brandBrown2x`}
+                  >
+                    {benefitToCustomers.header}
+                  </h1>
+                  <p className={`font-remRegular text-xm md:text-base text-brand`}>
+                    {benefitToCustomers.breakdownPragraph}
                   </p>
                 </article>
               );

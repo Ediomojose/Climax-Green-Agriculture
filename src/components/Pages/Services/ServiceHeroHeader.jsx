@@ -2,7 +2,7 @@
 const ServiceHeroHeader = () => {
   return (
     <>
-      <main className={`pt-28`}>
+      <main className={`pt-10`}>
       <header
           className={`flex flex-col justify-center items-center pt-42  px-5 md:px-20 lg:px-40`}
         >
