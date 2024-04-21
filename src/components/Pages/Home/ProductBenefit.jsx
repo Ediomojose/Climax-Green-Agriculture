@@ -43,7 +43,7 @@ const ProductBenefit = () => {
           className={`p-5 lg:p-16 rounded-3xl shadow-sm bg-brandLightGreen3x `}
         >
           <h1 className={`text-xl md:text-2xl lg:text-4xl font-josefinsansBold text-brandGreen1x`}>
-            Benefit to Farmers
+            Benefit of our Products
           </h1>
           <aside className={`grid md:grid-cols-2 gap-3 py-10`}>
             {benefitOfProduct.map((benefitOfProduct, index) => {

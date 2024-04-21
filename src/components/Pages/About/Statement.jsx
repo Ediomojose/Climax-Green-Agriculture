@@ -28,17 +28,10 @@ const Statement = () => {
             Our Vision
           </h1>
           <p className={`text-base font-josefinsansRegular text-justify	`}>
-            At Climax Green, we envision a future where sustainable agriculture
-            thrives, empowering local farmers, nourishing communities, and
-            promoting environmental stewardship. Our vision is to revolutionize
-            the agricultural sector by harnessing the potential of cassava,
-            transforming it into essential staple foods and innovative products
-            while pioneering digital solutions that connect farmers directly
-            with consumers. Through our commitment to organic farming practices,
-            technological innovation, and community engagement, we strive to
-            create a world where everyone has access to nutritious food,
-            economic opportunities flourish, and agricultural ecosystems are
-            resilient and vibrant
+            We aim to revolutionize the agricultural sector through cassava
+            innovation and digital solutions, fostering economic opportunities
+            and ensuring access to nutritious food for all, while building
+            resilient ecosystems.
           </p>
         </aside>
       </section>

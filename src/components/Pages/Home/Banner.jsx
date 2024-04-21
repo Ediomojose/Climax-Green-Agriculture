@@ -43,11 +43,31 @@ const Banner = () => {
                 </svg>
               </div>
               <div className={``}>
-                <h4 className={`text-lg font-josefinsansBold`}>Our Agriculture Growth</h4>
-                <p className={`font-remRegular text-md lg:text-base`}>
-                  Lorem ipsum dolor sit amet consectetur. Cursus purus at tempus
-                  arcu. Metus elit auctor
-                </p>
+                <h4 className={`text-lg font-josefinsansBold`}>
+                  We aims to achieve sustainable growth by:
+                </h4>
+                <ul className={`font-remRegular text-sm list-disc	pl-5`}>
+                  <li className={`pb-2`}>
+                    {" "}
+                    Expanding product offerings to meet evolving consumer
+                    preferences.
+                  </li>
+                  <li className={`pb-2`}>
+                    Strengthening partnerships with local farmers and
+                    stakeholders.
+                  </li>
+                  <li className={`pb-2`}>
+                    Leveraging technology for operational efficiency and
+                    innovation.
+                  </li>
+                  <li className={`pb-2`}>
+                    Enhancing marketing strategies to increase brand visibility.
+                  </li>
+                  <li className={`pb-2`}>
+                    Investing in sustainability initiatives to promote
+                    environmental stewardship
+                  </li>
+                </ul>
               </div>
             </div>
             <div className={`flex gap-5`}>
@@ -73,10 +93,13 @@ const Banner = () => {
                 </svg>
               </div>
               <div className={``}>
-                <h4 className={`text-lg font-josefinsansBold`}>Making Healthy Foods</h4>
-                <p className={`font-remRegular text-md lg:text-base`}>
-                  Lorem ipsum dolor sit amet consectetur. Cursus purus at tempus
-                  arcu. Metus elit auctor
+                <h4 className={`text-lg font-josefinsansBold`}>
+                  Making Healthy Foods
+                </h4>
+                <p className={`font-remRegular text-sm`}>
+                  Our products are rich in nutrients, providing essential energy
+                  for your daily activities and suitable for individuals with
+                  gluten sensitive or celiac disease.
                 </p>
               </div>
             </div>
