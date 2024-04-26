@@ -44,7 +44,7 @@ const Banner = () => {
               </div>
               <div className={``}>
                 <h4 className={`text-lg font-josefinsansBold`}>
-                  We aims to achieve sustainable growth by:
+                  We aim to achieve sustainable growth by:
                 </h4>
                 <ul className={`font-remRegular text-sm list-disc	pl-5`}>
                   <li className={`pb-2`}>

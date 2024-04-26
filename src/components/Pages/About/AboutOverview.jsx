@@ -51,7 +51,7 @@ const AboutOverview = () => {
               </p>
               <p className="">
                 In response, we embarked on a journey to transform cassava into
-                essential staple foods such as Garri, as well as high-quality
+                essential staple foods such as Garri and cassava snacks, as well as high-quality
                 cassava peel products (HQCP) for animal consumption.
               </p>
               <p className="">

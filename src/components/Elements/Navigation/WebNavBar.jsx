@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import navBarData from "../../../data/navigationData/NavBarData";
 import ClimaxGreenLogo from "../../../assets/media/logos/climax.png";
@@ -17,11 +17,13 @@ const WebNavBar = ({}) => {
         className={` fixed w-full z-50 flex flex-row items-center justify-between bg-brandWhite1x font-remRegular px-5 py-2 md:px-10 md:py-1 shadow-xl`}
       >
         <aside className={`flex items-center justify-start w-18 lg:w-fit`}>
-          <img
-            src={ClimaxGreenLogo}
-            alt={`Logo of Climax green Agriculture`}
-            className={`w-10 md:w-16`}
-          />
+          <Link to={"/"}>
+            <img
+              src={ClimaxGreenLogo}
+              alt={`Logo of Climax green Agriculture`}
+              className={`w-10 md:w-16`}
+            />
+          </Link>
         </aside>
         <nav className={`flex items-center`}>
           <ul
@@ -50,7 +52,7 @@ const WebNavBar = ({}) => {
               );
             })}
           </ul>
-        
+
           <NavLink to="/marketplace">
             <button
               type="button"
