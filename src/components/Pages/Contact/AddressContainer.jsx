@@ -32,12 +32,12 @@ const AddressContainer = () => {
 
           <div className={`flex gap-3 items-center pt-3`}>
             <img src={EmailIcon} alt="location icon climax green agriculture" />
-            <p className={`flex flex-col font-josefinsansRegular text-base`}>
+            <a href="mailto:climaxgreenltd@gmail.com" className={`flex flex-col font-josefinsansRegular text-base`}>
               <span className={`font-centurygothicBold`}>
                 Email Address:{" "}
               </span>
-              Igbakwu Ifite Road, Igbakwu Anambra state
-            </p>
+              climaxgreenltd@gmail.com
+            </a>
           </div>
         </aside>
         <aside className={`md:px-10`}>
