@@ -12,18 +12,25 @@ import "react-toastify/dist/ReactToastify.css";
 // A custom validation function. This must return an object
 // which keys are symmetrical to our values/initialValues
 // const validate = (values) => {
- 
+
 // };
+
+const Msg = ({ closeToast, toastProps, dynamicMesssage }) => (
+  <div>
+    {dynamicMesssage}
+
+    <button onClick={closeToast}></button>
+  </div>
+);
 
 const ContactForm = () => {
   // Pass the useFormik() hook initial form values, a validate function that will be called when
   // form values change or fields are blurred, and a submit function that will
   // be called when the form is submitted
-  const serviceId = "service_g5vm8it";
-  const templateId = "template_33zbnrh";
-  const publicKey = "yKOiJWnMTXCc6DtnC";
+  const serviceId = "service_jwjp3vx";
+  const templateId = "contact_form";
+  const publicKey = "zRbxX2_tn2fo_dS-_";
 
-  
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -31,35 +38,37 @@ const ContactForm = () => {
       email: "",
       message: "",
     },
-    validate: (values) =>{
+    validate: (values) => {
       const errors = {};
       if (!values.firstName) {
         errors.firstName = "Input field cannot be empty";
-      } else if (values.firstName.length <= 15) {
-        errors.firstName = "Must be 15 characters or less";
+      } else if (values.firstName.length < 3) {
+        errors.firstName = "First name input field mjust not be empty";
       }
-    
+
       if (!values.lastName) {
         errors.lastName = "Input field cannot be empty";
-      } else if (values.lastName.length <= 15) {
-        errors.lastName = "Must be 20 characters or less";
+      } else if (values.lastName.length < 3) {
+        errors.lastName = "Last name input field mjust not be empty";
       }
-    
+
       if (!values.email) {
         errors.email = "Input field cannot be empty";
-      } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+      } else if (
+        !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
+      ) {
         errors.email = "Invalid email address";
       }
-    
+
       if (!values.message) {
         errors.message = "Input field cannot be empty";
-      } else if (values.message.length >= 50) {
+      } else if (values.message.length < 50) {
         errors.message = "Must be 50 characters or more";
       }
-    
+
       return errors;
     },
-    onSubmit: (values, {resetForm}) => {
+    onSubmit: (values, { resetForm }) => {
       const templateParams = {
         from_name: values.firstName,
         from_email: values.email,
@@ -74,17 +83,22 @@ const ContactForm = () => {
         .then((response) => {
           console.log("Email was sent successfully", response);
           resetForm();
-          toast.success("Email sent successfully!");
+          toast.success(
+            <Msg dynamicMesssage={`Your message was sent successfully`} />
+          );
         })
         .catch((error) => {
           console.log("There was an error sending message", error);
-          toast.error("Error sending email. Please try again.");
+          toast.error(
+            <Msg dynamicMesssage={`There was an error sending message`} />
+          );
         });
     },
   });
 
   return (
     <>
+      <ToastContainer />
       <form
         onSubmit={formik.handleSubmit}
         className={`flex flex-col justify-center py-20 px-5 md:px-16 font-josefinsansRegular`}

@@ -15,20 +15,28 @@ import "react-toastify/dist/ReactToastify.css";
 
 // };
 
+const Msg = ({ closeToast, toastProps, dynamicMesssage }) => (
+  <div>
+    {dynamicMesssage}
+
+    <button onClick={closeToast}></button>
+  </div>
+);
+
 const Waitlist = () => {
   // Pass the useFormik() hook initial form values, a validate function that will be called when
   // form values change or fields are blurred, and a submit function that will
   // be called when the form is submitted
-  const serviceId = "service_g5vm8it";
-  const templateId = "template_33zbnrh";
-  const publicKey = "yKOiJWnMTXCc6DtnC";
+  const serviceId = "service_jwjp3vx";
+  const templateId = "waitlist_form";
+  const publicKey = "zRbxX2_tn2fo_dS-_";
 
   const formik = useFormik({
     initialValues: {
       fullName: "",
       email: "",
       lastName: "",
-      address: ""
+      address: "",
     },
     validate: (values) => {
       const errors = {};
@@ -61,8 +69,7 @@ const Waitlist = () => {
         user_email: values.email,
         reply_to: values.email,
         to_name: "Climax Green Agriculture",
-        selection_one: values.farmer,
-        selection_two: values.buyer,
+        operation_mode: values.radioGroup,
         business_name: values.businessName,
         address: values.address,
       };
@@ -72,17 +79,24 @@ const Waitlist = () => {
         .then((response) => {
           console.log("Email was sent successfully", response);
           resetForm();
-          toast.success("Email sent successfully!");
+          toast.success(
+            <Msg
+              dynamicMesssage={`Your request to join our waitlist has been sucessfully sent`}
+            />
+          );
         })
         .catch((error) => {
           console.log("There was an error sending message", error);
-          toast.error("Error sending email. Please try again.");
+          toast.error(
+            <Msg dynamicMesssage={`There was an error sending message`} />
+          );
         });
     },
   });
 
   return (
     <>
+    <ToastContainer/>
       <form
         onSubmit={formik.handleSubmit}
         className={`flex flex-col justify-center py-10 px-5 md:px-10 lg-px-14 font-josefinsansRegular`}
@@ -120,21 +134,29 @@ const Waitlist = () => {
             </div>
           ) : null}
         </div>
-
-        <div className="py-3 ">
+        <fieldset
+          id="radioGroup"
+          label=" What is your mode of opearation in the agricultural landscape?"
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.radioGroup}
+          error={formik.errors.radioGroup}
+        >
           <label htmlFor="mode_operation" className={``}>
             Mode of operation
-            <p className={`text-xs font-remRegular pb-4`}>What is your mode of opearation in the agricultural landscape?</p>
+            <p className={`text-xs font-remRegular pb-4`}>
+              What is your mode of opearation in the agricultural landscape?
+            </p>
           </label>
           <div className="">
             <input
               id="farmer"
-              name="mode_operation"
+              name="radioGroup"
               type="radio"
               className={``}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              value={formik.values.farmer}
+              value="Farmer"
             />
             <label htmlFor="farmer" className={`px-3`}>
               Farmer{" "}
@@ -143,18 +165,18 @@ const Waitlist = () => {
           <div className="">
             <input
               id="buyer"
-              name="mode_operation"
+              name="radioGroup"
               type="radio"
               className={``}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              value={formik.values.buyer}
+              value="Buyer"
             />
             <label htmlFor="buyer" className={`px-3`}>
               Buyer{" "}
             </label>
           </div>
-        </div>
+        </fieldset>
 
         <label htmlFor="businessName">
           Business Name <small className={`text-red-500`}>* Optional</small>
