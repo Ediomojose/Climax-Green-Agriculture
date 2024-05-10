@@ -1,14 +1,14 @@
 const benefitOfProduct = [
   {
-    header: "Fresh, Local Produce",
+    header: "Nutritional Excellence",
     breakdownPragraph:
-      " Customers enjoy fresh, locally sourced products directly from farmers, promoting sustainability and ethical consumption.",
+      "Our products are packed with essential nutrients for overall health and well-being",
   },
 
   {
-    header: "Nutritious Options",
+    header: "Versatility",
     breakdownPragraph:
-      " Our products offer essential nutrients without additives, providing a healthy alternative to processed foods.",
+      " From traditional dishes to animal feed, our products offer endless culinary possibilities.",
   },
   {
     header: "Gluten-Free and Allergen-Friendly",
@@ -17,20 +17,20 @@ const benefitOfProduct = [
   },
 
   {
-    header: "Convenience",
+    header: "Sustainable Sourcing",
     breakdownPragraph:
-      "Our online platform enables easy ordering and delivery, saving customers time and effort.",
+      "Supporting local farmers and sustainable agriculture practices.",
   },
   {
-    header: "Transparent Sourcing",
+    header: "Cost-Effectiveness",
     breakdownPragraph:
-      " Customers can trace their food's journey from farm to table, ensuring ethical and sustainable practices.",
+      "High-quality nutrition at an affordable price point.",
   },
 
   {
-    header: "Variety",
+    header: "Convenience",
     breakdownPragraph:
-      "Our products offer culinary versatility, catering to traditional and innovative tastes alike.",
+      " Easy online ordering and delivery options for hassle-free shopping.",
   },
 ];
 
