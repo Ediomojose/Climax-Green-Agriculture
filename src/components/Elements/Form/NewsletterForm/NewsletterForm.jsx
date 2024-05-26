@@ -5,10 +5,18 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+const Msg = ({ closeToast, toastProps, dynamicMesssage }) => (
+  <div>
+    {dynamicMesssage}
+
+    <button onClick={closeToast}></button>
+  </div>
+);
+
 const NewsletterForm = ({ placeholder }) => {
-  const serviceId = "service_g5vm8it";
-  const templateId = "template_33zbnrh";
-  const publicKey = "yKOiJWnMTXCc6DtnC";
+  const serviceId = "service_jwjp3vx";
+  const templateId = "contact_form";
+  const publicKey = "zRbxX2_tn2fo_dS-_";
 
   const formik = useFormik({
     initialValues: {
@@ -35,24 +43,30 @@ const NewsletterForm = ({ placeholder }) => {
         from_email: values.email,
         reply_to: values.email,
         to_name: "Climax Green Agriculture",
-        message: `${values.email}  is interested to josin the waitlist for our decentralized agricultural marketplace `,
+        message: `${values.email}  is interested to joining the waitlist for our decentralized agricultural marketplace `,
       };
 
       emailjs
         .send(serviceId, templateId, templateParams, publicKey)
         .then((response) => {
-          console.log("Email was sent successfully", response);
           resetForm();
-          toast.success("Email sent successfully!");
+          toast.success(
+            <Msg dynamicMesssage={`Your message was sent successfully`} />
+          );
         })
         .catch((error) => {
-          console.log("There was an error sending message", error);
-          toast.error("Error sending email. Please try again.");
+          toast.error(
+            <Msg dynamicMesssage={`There was an error sending message`} />
+          );
         });
     },
   });
 
   return (
+    <>
+    <ToastContainer />
+
+    
     <form
       onSubmit={formik.handleSubmit}
       className={`w-full mx-5 md:mx-0 flex flex-col justify-center items-center `}
@@ -93,6 +107,7 @@ const NewsletterForm = ({ placeholder }) => {
         </div>
       ) : null}
     </form>
+    </>
   );
 };
 
